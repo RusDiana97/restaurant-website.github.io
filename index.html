@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pie or Bye</title>
+
+    <!------------ Scroll Reveal ------------>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!------------ CSS ------------>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!------------ Font Awesome Icons ------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!------------ Scroll To Top ------------>
+    <a href="#home" id="scroll-top" class="scroll-top"
+      ><i class="fa-solid fa-angle-up"></i
+    ></a>
+
+    <!------------ Header ------------>
+    <header id="header" class="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo">Pie or Bye</a>
+
+        <div class="nav-menu">
+          <ul class="nav-menu-list" id="nav-menu-list">
+            <li class="nav-menu-list-item">
+              <a href="#home" class="nav-menu-list-item-link active-link"
+                >Home</a
+              >
+            </li>
+            <li class="nav-menu-list-item">
+              <a href="#about" class="nav-menu-list-item-link">About</a>
+            </li>
+            <li class="nav-menu-list-item">
+              <a href="#services" class="nav-menu-list-item-link">Services</a>
+            </li>
+            <li class="nav-menu-list-item">
+              <a href="#menu" class="nav-menu-list-item-link">Menu</a>
+            </li>
+            <li class="nav-menu-list-item">
+              <a href="#contact" class="nav-menu-list-item-link">Contact</a>
+            </li>
+
+            <li class="nav-menu-list-item change-theme-menu-list-item">
+              <i
+                id="btn-theme"
+                class="fa-regular fa-moon change-theme"
+                onclick="changeTheme()"
+              ></i>
+            </li>
+          </ul>
+
+          <div
+            class="nav-menu-toggle"
+            id="nav-menu-toggle"
+            onclick="navMenuToggle()"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!------------ Main ------------>
+    <main class="main" id="main">
+      <!------------ Home ------------>
+      <section class="home" id="home">
+        <div class="home-container container grid">
+          <div class="home-info">
+            <h1 class="home-title">Best Pie on Town</h1>
+            <h2 class="home-subtitle">
+              Try it, <br />
+              you won't regret it.
+            </h2>
+            <a href="#menu" class="btn">View Menu</a>
+          </div>
+
+          <img
+            class="home-img"
+            src="./assets/images/didi-miam-Lkb1g9ivC2c-unsplash.jpg"
+            alt="home-img"
+          />
+        </div>
+      </section>
+
+      <!------------ About ------------>
+      <section class="about section container" id="about">
+        <div class="about-container grid">
+          <div class="about-info">
+            <span class="section-subtitle about-initial">About Us</span>
+            <h2 class="section-title about-initial">
+              Do you want a <br />
+              tasty pie?
+            </h2>
+            <p class="about-desc">
+              Good for you because we cook the best pies in town at the best
+              price, come here to convince yourself.
+            </p>
+            <a href="#" class="btn">Our History</a>
+          </div>
+          <img
+            class="about-img"
+            src="./assets/images/tetiana-shadrina-2mjEiMaMCz4-unsplash.jpg"
+            alt="about-img"
+          />
+        </div>
+      </section>
+
+      <!------------ Services ------------>
+      <section class="services section container" id="services">
+        <span class="section-subtitle">Offering</span>
+        <h2 class="section-title">Our amazing services</h2>
+
+        <div class="services-container grid">
+          <!------------ Excellent Quality ------------>
+          <div class="services-content">
+            <h3 class="services-title">Excellent Quality</h3>
+            <p class="service-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, a.
+            </p>
+            <div class="icon-container">
+              <i class="fa-solid fa-utensils service-icon"></i>
+            </div>
+          </div>
+
+          <!------------ Low Prices ------------>
+          <div class="services-content">
+            <h3 class="services-title">Low Prices</h3>
+            <p class="service-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+              provident!
+            </p>
+            <div class="icon-container">
+              <i class="fa-solid fa-hand-holding-dollar service-icon"></i>
+            </div>
+          </div>
+
+          <!------------ Fast Delivery ------------>
+          <div class="services-content">
+            <h3 class="services-title">Fast Delivery</h3>
+            <p class="service-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              deserunt.
+            </p>
+            <div class="icon-container">
+              <i class="fa-solid fa-truck service-icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------ Menu ------------>
+      <section class="menu section container" id="menu">
+        <span class="section-subtitle">Pie or Bye</span>
+        <h2 class="section-title">Menu</h2>
+
+        <!------------ Cherry Pie ------------>
+        <div class="menu-container grid">
+          <div class="menu-content">
+            <img
+              class="menu-img"
+              src="./assets/images/jonathan-cooper-OrbFHwUeGcg-unsplash.jpg"
+              alt="menu-img"
+            />
+            <h3 class="menu-name">Cherry Pie</h3>
+            <span class="menu-detail">Delicious Pie</span>
+            <span class="menu-price">&euro;5.00</span>
+            <a href="#" class="btn menu-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+
+          <!------------ Fruits Pie ------------>
+          <div class="menu-content">
+            <img
+              class="menu-img"
+              src="./assets/images/fernando-andrade-33GPuoFI7v8-unsplash.jpg"
+              alt="menu-img"
+            />
+            <h3 class="menu-name">Fruits Pie</h3>
+            <span class="menu-detail">Delicious Pie</span>
+            <span class="menu-price">&euro;5.50</span>
+            <a href="#" class="btn menu-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+
+          <!------------ Apple Pie ------------>
+          <div class="menu-content">
+            <img
+              class="menu-img"
+              src="./assets/images/danil-aksenov-bkXzABDt08Q-unsplash.jpg"
+              alt="menu-img"
+            />
+            <h3 class="menu-name">Peach Pie</h3>
+            <span class="menu-detail">Delicious Pie</span>
+            <span class="menu-price">&euro;6.00</span>
+            <a href="#" class="btn menu-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+
+          <!------------ Apple Pie ------------>
+          <div class="menu-content">
+            <img
+              class="menu-img"
+              src="./assets/images/masha-fathi-_PL4luMSMpM-unsplash.jpg"
+              alt="menu-img"
+            />
+            <h3 class="menu-name">Apple Pie</h3>
+            <span class="menu-detail">Delicious Pie</span>
+            <span class="menu-price">&euro;6.50</span>
+            <a href="#" class="btn menu-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!------------ App ------------>
+      <section class="app section container">
+        <div class="app-container grid">
+          <div class="app-info">
+            <span class="section-subtitle app-initial">App</span>
+            <h2 class="section-title app-initial">App is available</h2>
+            <p class="app-desc">
+              Download our app for pies orders, see your delivery and more.
+            </p>
+            <div>
+              <!------------ Download on App Store ------------>
+              <div class="app-apple app-box">
+                <i class="fa-brands fa-apple app-icon"></i>
+                <div class="app-down-info">
+                  <p class="app-down-desc">Download on the</p>
+                  <h3 class="app-down-title">App Store</h3>
+                </div>
+              </div>
+
+              <!------------ Download on Google Play ------------>
+              <div class="app-google app-box">
+                <i class="fa-brands fa-google-play app-icon"></i>
+                <div class="app-down-info">
+                  <p class="app-down-desc">GET IT ON</p>
+                  <h3 class="app-down-title">Google Play</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            class="app-img"
+            src="./assets/images/app-photo.jpg"
+            alt="app-img"
+          />
+        </div>
+      </section>
+
+      <!------------ Contact ------------>
+      <section class="contact section container" id="contact">
+        <div class="contact-container grid">
+          <div class="contact-info">
+            <span class="section-subtitle contact-initial">Let's talk</span>
+            <h2 class="section-title contact-initial">Contact us</h2>
+            <p class="contact-desc">
+              If you need more details about our pies, feel free to contact us
+              and we promise you that we will reply fast.
+            </p>
+          </div>
+          <div class="contact-btn">
+            <a href="#" class="btn">Contact us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!------------ Footer ------------>
+    <footer class="footer section container">
+      <div class="footer-container grid">
+        <div class="footer-content">
+          <a href="#" class="footer-logo">Pie or Bye</a>
+          <span class="footer-desc">delivery</span>
+
+          <!------------ Social Media Links  ------------>
+          <div class="footer-social-icons">
+            <a href="#" class="footer-social-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-social-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-social-icon">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Services</h3>
+          <ul>
+            <li><a href="#" class="footer-link">Quality</a></li>
+            <li><a href="#" class="footer-link">Pricing</a></li>
+            <li><a href="#" class="footer-link">Delivery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer-link">Contact us</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms and Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Address</h3>
+          <ul>
+            <li>Romania - Dej</li>
+            <li>405200</li>
+            <li>+40 755 766 ***</li>
+            <li>pieorbye</li>
+          </ul>
+        </div>
+
+        <p class="footer-copy">
+          &copy;
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          Pie or Bye. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!------------ JS ------------>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
