@@ -23,6 +23,10 @@ You have two choices:
 
 ## 3. How to Use the Project
 
+![gif-1](gifs/PieOrBye-gif-1.gif)
+
+![gif-2](gifs/PieOrBye-gif-2.gif)
+
 See more on [LIVE DEMO](https://rusdiana97.github.io/restaurant-website.github.io/)!
 
 ## 4. Credits
