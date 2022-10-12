@@ -23,7 +23,20 @@ You have two choices:
 
 ## 3. How to Use the Project
 
+The project is divided into three parts:
+1. header
+2. main
+3. footer
+
+I have prepared two gifs to present you *PIE or BYE delivery* website.
+
+In the first gif you can see that the website has a navbar with the logo of the restaurant, the menu and a button for switch to dark/light theme. This is the *header* of the website. For every item of the menu I made a section, so the website has five sections, plus one extra for app download. These are the *main* of the page. And finally the *footer*, where I put some informations about the restaurant such as links to social media, address, services etc.
+
+I used ScrollReveal JavaScript library for animating elements as they enter/leave the viewport.
+
 ![gif-1](gifs/PieOrBye-gif-1.gif)
+
+In the second gif you can see that the design is responsive.
 
 ![gif-2](gifs/PieOrBye-gif-2.gif)
 
